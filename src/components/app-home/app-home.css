@@ -1,0 +1,7 @@
+app-home .logoHome{
+  height: 100%;
+}
+
+app-home ion-grid{
+  height: 70%;
+}

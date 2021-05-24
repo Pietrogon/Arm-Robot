@@ -6,26 +6,40 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface AppCreateAccount {
+    }
     interface AppHome {
     }
-    interface AppProfile {
-        "name": string;
+    interface AppLogin {
     }
     interface AppRoot {
     }
+    interface CompLoading {
+    }
+    interface CompPageMenuPattern {
+        "titlePage": string;
+    }
+    interface CompPermission {
+    }
 }
 declare global {
+    interface HTMLAppCreateAccountElement extends Components.AppCreateAccount, HTMLStencilElement {
+    }
+    var HTMLAppCreateAccountElement: {
+        prototype: HTMLAppCreateAccountElement;
+        new (): HTMLAppCreateAccountElement;
+    };
     interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {
     }
     var HTMLAppHomeElement: {
         prototype: HTMLAppHomeElement;
         new (): HTMLAppHomeElement;
     };
-    interface HTMLAppProfileElement extends Components.AppProfile, HTMLStencilElement {
+    interface HTMLAppLoginElement extends Components.AppLogin, HTMLStencilElement {
     }
-    var HTMLAppProfileElement: {
-        prototype: HTMLAppProfileElement;
-        new (): HTMLAppProfileElement;
+    var HTMLAppLoginElement: {
+        prototype: HTMLAppLoginElement;
+        new (): HTMLAppLoginElement;
     };
     interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {
     }
@@ -33,33 +47,71 @@ declare global {
         prototype: HTMLAppRootElement;
         new (): HTMLAppRootElement;
     };
+    interface HTMLCompLoadingElement extends Components.CompLoading, HTMLStencilElement {
+    }
+    var HTMLCompLoadingElement: {
+        prototype: HTMLCompLoadingElement;
+        new (): HTMLCompLoadingElement;
+    };
+    interface HTMLCompPageMenuPatternElement extends Components.CompPageMenuPattern, HTMLStencilElement {
+    }
+    var HTMLCompPageMenuPatternElement: {
+        prototype: HTMLCompPageMenuPatternElement;
+        new (): HTMLCompPageMenuPatternElement;
+    };
+    interface HTMLCompPermissionElement extends Components.CompPermission, HTMLStencilElement {
+    }
+    var HTMLCompPermissionElement: {
+        prototype: HTMLCompPermissionElement;
+        new (): HTMLCompPermissionElement;
+    };
     interface HTMLElementTagNameMap {
+        "app-create-account": HTMLAppCreateAccountElement;
         "app-home": HTMLAppHomeElement;
-        "app-profile": HTMLAppProfileElement;
+        "app-login": HTMLAppLoginElement;
         "app-root": HTMLAppRootElement;
+        "comp-loading": HTMLCompLoadingElement;
+        "comp-page-menu-pattern": HTMLCompPageMenuPatternElement;
+        "comp-permission": HTMLCompPermissionElement;
     }
 }
 declare namespace LocalJSX {
+    interface AppCreateAccount {
+    }
     interface AppHome {
     }
-    interface AppProfile {
-        "name"?: string;
+    interface AppLogin {
     }
     interface AppRoot {
     }
+    interface CompLoading {
+    }
+    interface CompPageMenuPattern {
+        "titlePage"?: string;
+    }
+    interface CompPermission {
+    }
     interface IntrinsicElements {
+        "app-create-account": AppCreateAccount;
         "app-home": AppHome;
-        "app-profile": AppProfile;
+        "app-login": AppLogin;
         "app-root": AppRoot;
+        "comp-loading": CompLoading;
+        "comp-page-menu-pattern": CompPageMenuPattern;
+        "comp-permission": CompPermission;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "app-create-account": LocalJSX.AppCreateAccount & JSXBase.HTMLAttributes<HTMLAppCreateAccountElement>;
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
-            "app-profile": LocalJSX.AppProfile & JSXBase.HTMLAttributes<HTMLAppProfileElement>;
+            "app-login": LocalJSX.AppLogin & JSXBase.HTMLAttributes<HTMLAppLoginElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+            "comp-loading": LocalJSX.CompLoading & JSXBase.HTMLAttributes<HTMLCompLoadingElement>;
+            "comp-page-menu-pattern": LocalJSX.CompPageMenuPattern & JSXBase.HTMLAttributes<HTMLCompPageMenuPatternElement>;
+            "comp-permission": LocalJSX.CompPermission & JSXBase.HTMLAttributes<HTMLCompPermissionElement>;
         }
     }
 }

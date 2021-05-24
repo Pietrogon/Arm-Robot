@@ -1,0 +1,7 @@
+comp-page-menu-pattern {
+  height: 100%;
+}
+
+comp-page-menu-pattern .content {
+  margin: auto !important;
+}

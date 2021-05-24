@@ -1,0 +1,21 @@
+comp-permission .hide{
+  display: none !important;
+}
+
+comp-permission .show{
+  display: block !important;
+  height: 100%;
+}
+
+comp-permission .backgroundPrimary{
+  background: var(--ion-color-primary);
+}
+
+comp-permission {
+  height: 100%;
+}
+
+comp-permission .title{
+  font-size: 32pt;
+  font-weight: bold;
+}

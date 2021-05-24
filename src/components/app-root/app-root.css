@@ -1,0 +1,4 @@
+app-root .progress-bar {
+  position: fixed;
+  z-index: 9999;
+}

@@ -1,0 +1,33 @@
+comp-loading .loading{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100%;
+}
+
+comp-loading {
+  height: 100%;
+}
+
+comp-loading .mobile{
+  display: flex;
+  flex-direction: column;
+  width: 95% !important;
+  height: 520px !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+}
+
+comp-loading .web{
+  display: flex;
+  flex-direction: column;
+  width: 895px !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+}
+
+comp-loading h1{
+  font-size: 80pt !important;
+  text-align: center;
+  color: var(--ion-color-primary);
+}
