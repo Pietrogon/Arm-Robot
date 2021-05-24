@@ -16,6 +16,10 @@ export class AppHome {
     console.log(this.user);    
   }
 
+  inputV0Handler(event: Event){
+
+  }
+
   render(){
     return (
       <comp-page-menu-pattern>
@@ -23,6 +27,13 @@ export class AppHome {
           <ion-grid>
             <ion-row>
               <ion-col>
+                <ion-item>
+                  <ion-label position='floating'>Eixo X</ion-label>
+                  <ion-input clearInput onInput={(event) => this.inputV0Handler(event)} name='password'></ion-input>
+                </ion-item>
+                <ion-item lines='none'>
+                  <ion-button class='ion-padding' size='large'>Send</ion-button>
+                </ion-item>
               </ion-col>
             </ion-row>
           </ion-grid>
