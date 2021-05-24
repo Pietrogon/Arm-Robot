@@ -1,6 +1,7 @@
 import { Component, h, State } from '@stencil/core';
 import { User } from '../../interfaces/user.interface';
 import { AuthService } from '../../services/auth.service';
+import { BlynkService } from '../../services/blynk.service';
 
 @Component({
   tag: 'app-home',
@@ -17,7 +18,9 @@ export class AppHome {
   }
 
   inputV0Handler(event: Event){
-
+    var armRobot = new BlynkService("pO1g8yFnszYjhhk6WvO008RlMNUCWocf");
+    armRobot.update('V0','20');
+    armRobot.update('V1', '95');
   }
 
   render(){

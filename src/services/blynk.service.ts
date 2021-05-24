@@ -1,7 +1,7 @@
 import { firestore, functions } from "../firebase";
 import { CommandAdmin } from "../interfaces/commandAdmin.interface";
 
-export class BlynkProvider {
+export class BlynkService {
 	private _commandAdmin: CommandAdmin = {} as CommandAdmin;
 
 	constructor(uidDevice: string) {
